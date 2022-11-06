@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <form id="form" name="form" style="width:100%">
+         <input type="text" id="back" name="expression" style="height: 40px;width: 300px;background-color:rgb(119, 158, 241);text-align:center"/><br/>
+         <input type="button" value="(" onclick="form.expression.value+='('"> 
+         <input type="button" value=")" onclick="form.expression.value+=')'">
+         <input type="button" value="C" onclick="form.expression.value=''" style="background-color:red">
+         <input type="button" value="del" onclick="del()">
+         <input type="button" value="7" onclick="form.expression.value+='7'">
+         <input type="button" value="8" onclick="form.expression.value+='8'">
+         <input type="button" value="9" onclick="form.expression.value+='9'">
+         <input type="button" value="/" onclick="form.expression.value+='/'">
+         <input type="button" value="4" onclick="form.expression.value+='4'">
+         <input type="button" value="5" onclick="form.expression.value+='5'">
+         <input type="button" value="6" onclick="form.expression.value+='6'">
+         <input type="button" value="*" onclick="form.expression.value+='*'">
+         <input type="button" value="1" onclick="form.expression.value+='1'">
+         <input type="button" value="2" onclick="form.expression.value+='2'">
+         <input type="button" value="3" onclick="form.expression.value+='3'">
+         <input type="button" value="-" onclick="form.expression.value+='-'">
+         <input type="button" value="0" onclick="form.expression.value+='0'">
+         <input type="button" value="." onclick="form.expression.value+='.'">
+         <input type="button" value="=" onclick="form.expression.value=eval(form.expression.value)">
+         <input type="button" value="+" onclick="form.expression.value+='+'">
+         
+         
+         
+         
+    </form>
+    <script src="calculator.js"></script>
+</body>
+</html>
